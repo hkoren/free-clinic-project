@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Free Clinic Project</string>
+   	
+   	<!--  General Terminology  -->
+   	<string name="close">Close</string>
+   	<string name="save">Save</string>
+   	<string name="exit">Exit</string>
+   	<string name="open">Open</string>
+   	<string name="add">Add</string>
+   	<string name="cancel">Cancel</string>
+   	<string name="details">Details</string>
+   	<string name="search">Search</string>
+   	<string name="all">All</string>
+   	<string name="help">Help</string>
+   	<string name="refresh">Refresh</string>
+   	
+   	<!-- Sort Orders -->
+   	<string name="date">Date</string>
+   	<string name="type">Type</string>
+   	<string name="name">Name</string>
+   	<string name="order_by">Order By</string>
+   	
+   	<!--  Modules -->
+   	<string name="chart">Chart Viewer</string>
+    <string name="checkins">Check-in's</string>  
+    <string name="history">History</string>
+    <string name="medications">Medications</string>
+    <string name="allergies">Allergies</string>
+    <string name="visualize">Visualize</string>
+    	
+   	<!--  Units  -->
+    <string name="mmHg">mm Hg</string>
+    <string name="bpm">BPM</string>
+    <string name="degF">°f</string> 	
+    
+   	<!--  Settings  -->
+    <string name="host">Host</string>
+    <string name="host_text">Enter domain or IP</string>
+    <string name="port">Port</string>
+    <string name="port_text">Enter TCP Port</string>  	
+    
+   	<!--  Patient  -->
+   	<string name="patient">Patient</string>
+   	<string name="patient_search">Patient Search</string>
+    <string name="patientID">Patient ID#</string>
+    <string name="patient_loading">Patient Medical Record Loading</string>
+    <string name="patient_refresh">Refresh Record</string>
+    
+   	<!--  Vitals   -->
+   	<string name="collect_vitals">Get Vitals</string>
+   	<string name="vitals_collected">Vitals</string>
+   	<string name="temp">Temperature</string>
+    <string name="temp_invalid">Temperature Invalid</string>
+    <string name="hr">Heart Rate</string>
+    <string name="hr_invalid">Heart Rate Invalid</string>
+    <string name="syst">Systolic BP</string>
+    <string name="syst_invalid">Systolic Blood Pressure Invalid</string>
+    <string name="dias">Diastolyc BP</string>
+    <string name="dias_invalid">Systolic Blood Pressure Invalid</string>
+    <string name="resp">Respiration</string>
+    <string name="resp_invalid">Respiration Invalid</string>
+    <string name="vitals_rec">Vitals Recorded</string>
+    <string name="vitals_err">Error Recording Vitals</string>
+   	
+   	<!--  History -->
+   	
+   	<!-- Allergies -->
+   	<string name="patient_allergies">Patient Allergies</string>
+   	
+   	<!--  Messages  -->
+   	<string name="prescribe">Prescribe</string>
+   	<string name="prescriptions">Prescriptions</string>
+    <string name="diagnose">Diagnose</string>
+    <string name="diagnoses">Diagnoses</string>
+    <string name="treat">Treatment</string>
+    <string name="treatments">Treatments</string>
+    <string name="refer">Referral</string>
+    <string name="referrals">Referrals</string>
+    <string name="test">Test</string>
+    <string name="tests">Tests</string>
+    <string name="labs">Labs</string>
+    <string name="note">Note</string>
+    <string name="notes">Notes</string>
+    <string name="update_messages">Update Messages</string>
+    
+    <!--  Security  -->
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Enter your password here</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="logoutSuccess">Logout Success</string>
+    <string name="password_text">xxxx</string>
+    <string name="username_text">demo</string>
+    <string name="register_button">Register</string>
+    <string name="device_reg">Device Registration</string>
+    <string name="registering">Sent Request To Register Device.\nYou Will Receive Confirmation Shortly.</string>
+    <string name="registered">Device Registered, Thank You.</string>
+    <string name="already_registered">This Device Is Already Registered.</string>
+    <string name="not_authorized">"Not Authorized!"</string>
+    <string name="reg_failed">Registration Failed... Please Try Again</string>
+    <string name="register">Click to Register Device.</string>
+    
+    
+    <!--  Service -->
+    <string name="login_title">Please Login...</string>
+    <string name="clinic_service_started">Clinic Service Started</string>
+    <string name="user_hint">enter your user name here</string>
+    <string name="clinic_service_disconnected">Clinic Service Disconnected</string>
+    <string name="service_controller">Clinic Service Controller</string>
+    <string name="clinic_service_label">Clinic Service</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    
+    <!--  Patient List -->
+    <string name="patient_list_header">Checked In Patients</string>
+    
+</resources>

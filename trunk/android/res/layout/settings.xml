@@ -1,0 +1,40 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:stretchColumns="0"
+   style="@style/FCPBackground">
+
+   <TableRow>
+       <TextView
+           android:text="@string/host"
+           android:textStyle="bold"
+           android:textAlign="end"
+           android:padding="3dip" />
+
+       <EditText android:id="@+id/host"
+           android:padding="3dip"
+           android:scrollHorizontally="true" />
+   </TableRow>
+
+   <TableRow>
+       <TextView
+           android:text="@string/port"
+           android:textStyle="bold"
+           android:textAlign="end"
+           android:padding="3dip" />
+
+       <EditText android:id="@+id/port"
+           android:padding="3dip"
+           android:scrollHorizontally="true" />
+   </TableRow>
+
+   <TableRow
+       android:gravity="right">
+
+       <Button android:id="@+id/cancel"
+           android:text="@string/cancel" />
+
+       <Button android:id="@+id/save"
+           android:text="@string/save" />
+   </TableRow>
+</TableLayout>

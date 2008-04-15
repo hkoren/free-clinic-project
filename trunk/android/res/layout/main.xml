@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:text="@string/app_name"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    />
+	   <LinearLayout
+	    android:orientation="horizontal"
+	   		android:gravity="center"
+	   		android:layout_height="wrap_content"
+	   		android:layout_width="fill_parent">
+	   		<Button android:id="@+id/register" android:text="@string/register_button" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	   		<Button android:id="@+id/checkins" android:text="@string/checkins" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	   		<Button android:id="@+id/update_messages" android:text="@string/update_messages" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	   	</LinearLayout>
+
+	   <LinearLayout
+	    android:orientation="horizontal"
+	   		android:gravity="center"
+	   		android:layout_height="wrap_content"
+	   		android:layout_width="fill_parent">
+	       <TextView
+	           android:text="@string/patientID" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	
+	       <EditText android:id="@+id/patientID"
+	           android:scrollHorizontally="true" android:layout_width="100dip" android:layout_height="wrap_content"
+	           android:text="31"/>
+	       <Button android:id="@+id/open"
+	           android:text="@string/open" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	   </LinearLayout>
+	   <LinearLayout
+	    android:orientation="horizontal"
+	   		android:gravity="center"
+	   		android:layout_height="wrap_content"
+	   		android:layout_width="fill_parent">
+	       <TextView
+	           android:text="@string/patient_search" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	
+	       <EditText android:id="@+id/patient_search"
+	           android:scrollHorizontally="true" android:layout_width="100dip" android:layout_height="wrap_content"/>
+	       <Button android:id="@+id/search"
+	           android:text="@string/search" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	   </LinearLayout>
+</LinearLayout>

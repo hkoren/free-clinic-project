@@ -1,0 +1,11 @@
+Options Indexes FollowSymLinks Includes
+
+
+
+#Add PHP support to .htm
+AddType application/x-httpd-php .htm .html
+
+
+
+#Add directory index
+DirectoryIndex index.htm index.html index.php

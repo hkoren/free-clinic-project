@@ -1,0 +1,407 @@
+body {
+font-family: sans-serif, Verdana, Arial, Helvetica ;
+line-height:125%;
+font-size:12px;
+background:#afc4d3;
+margin: 0;
+}
+
+
+.section  { font-family:'Arial'; color:#3366FF; font-size:14pt; font-weight:bold; margin: 10px 10px 10px 10px;}
+.alert {font-family:'Arial'; color:#FF0000; font-size:10pt;font-weight:bold; margin: 10px 10px 10px 20px;}
+#wrap {
+	background: #fff;
+	width:900px;
+	margin:0px auto;
+	padding: 0 0 3px 0;
+}
+.route {
+	float:left; 
+	display: inline-block;
+	width: 210px;
+	margin-bottom: 5px;
+}
+
+
+.BAD {
+	border: 1px solid red;
+	background-color:#FF9999;
+}
+
+
+/* autcomplete */
+
+#autocomplete ul { margin:0; padding: 0; text-align:left }
+#autocompelte ul li { padding:3px; margin: 0;text-align:left }
+
+
+#heading {
+	font-family: arial;
+	font-weight:bold;
+	color: #fff;
+	font-size: 14px;
+	background: #444;
+	padding: 0px 5px 0px 5px;
+	margin: 0 0 3px 0;
+}
+
+#heading a {
+color: #fff;
+}
+
+#heading a:hover {
+color: #f00;
+}
+
+
+a, .link {
+	color: #0a56ac;
+}
+
+a:hover, .link:hover {
+	text-decoration: underline;
+	color: #f00;
+}
+
+/* patent page */
+.section_header {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 0 10px 0;
+	cursor: hand; 
+}
+
+.section_header_options {
+	padding: 0 0 10px 0;
+	float: right;
+}
+
+
+.section_option {
+	padding: 0 0 10px 0;
+}
+
+.section_content td {
+	padding: 0 5px 5px 0;
+}
+
+.label {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+/* check in */
+.action_cell input {
+	font-size: 10px;
+}
+
+
+
+/* define forms */
+form {
+display: inline;
+}
+
+#form_container input[type="text"] {
+}
+
+#form_container select {
+}
+
+#form_container textarea {
+}
+
+
+
+
+.table_blue {
+background-color:#eee;
+padding:10px;
+margin: 0 0 20px 0;
+}
+
+
+.table_yellow {
+background-color:#fffecb;
+padding:10px;
+margin: 0 0 20px 0;
+}
+
+#footer {
+font-size: 12px;
+color:#999;
+text-align:center;
+}
+
+
+
+.w {
+text-align: center;
+font-weight:bold;
+background-color: #fffecb;
+padding: 10px;
+margin: 0 0 20px 0;
+}
+
+
+.page_divider{
+	height: 20px;
+}
+
+
+.message {
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
+.message_top {
+	margin: 0 0 10px 0;
+}
+
+
+.handle_move{
+}
+
+#dhtmltooltip{
+position: absolute;
+left: -300px;
+width: 150px;
+border: 1px solid black;
+padding: 2px;
+background-color: #FFF68F;
+visibility: hidden;
+z-index: 100;
+color: black;
+font-size:8pt;
+}
+
+#dhtmlpointer{
+position:absolute;
+left: -300px;
+z-index: 101;
+visibility: hidden;
+}
+
+H2 {
+	border-bottom: solid 1px #000;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4B4545;
+    border-bottom: 1px solid black;
+}
+
+table.datagrid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.datagrid thead th { 
+    text-align: left;
+    background-color: #4B4545;
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: white;
+    font-weight: bold;
+    padding: .3em .7em;
+    font-size: .9em;
+    padding-right: 5px;
+    background-repeat: no-repeat;
+    background-position: 95% 100%;
+}
+
+table.datagrid thead th a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.0em;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 15px;
+}
+
+table.datagrid thead th.over {
+    background-color: #746B6B;
+    cursor: pointer;
+}
+
+table.datagrid tbody th {
+    font-weight: bold;
+}
+
+table.datagrid tbody td, table.datagrid tbody th {
+    text-align: left;
+    padding: .3em .7em;
+    border-bottom: 1px solid #eee;
+}
+
+table.datagrid tbody tr.alternate td, table.datagrid tbody tr.alternate th {
+    background-color: #f1f1f1;
+}
+
+table.datagrid tfoot td, table.datagrid tfoot th { 
+    background-color: #FFFEE3;
+    color: #4B4545;
+    padding: .5em;
+    font-weight: bold;
+    border-top: 2px solid #4B4545;
+}
+
+table.datagrid tfoot th { text-align: left; }
+
+table.datagrid tfoot td {  }
+
+.invisible { display: none; }
+
+.patientBar { 
+	background-color: #eeeeee; 
+	text-align: center;
+	padding: 0px;
+	border-spacing: 0px;
+	font-size: 10pt;
+}
+.patientBar A {
+	text-decoration: none;
+}
+.patientBar A:hover {
+	text-decoration: underline;
+}
+.topNav {
+	text-align: center;
+	padding: 0px;
+	font-size: 13pt;
+}
+.topNav A.selected {
+	color: #FCC;
+	text-decoration: underline;
+}
+
+.resultCount
+{
+	text-align: right;
+	background-color: #BBBBFF;
+}
+.pagination
+{
+	text-align: center;
+
+}
+.s
+{
+	text-decoration:none;
+	font-size: 24pt;
+}
+.sSelected
+{
+	color: #ff0000;
+	text-decoration:none;
+	font-size: 24pt;
+}
+.searchBox {
+/*	border: 				solid black 1px;*/
+	position:				absolute;
+	background-color:		#cccccc;
+	text-align:				left;
+	width:					260px;
+}
+
+div .inline {
+	display: table;
+	clear: left;
+	white-space: nowrap;
+}
+p.inline {
+	display: table-row;
+}
+.compact {
+}
+.compact .inline .desc {
+	width:auto;
+}
+.compact .inline .text  {
+	width: auto;
+}
+.input { 
+	width:210px;
+}
+.inline .smallinput .desc {
+	display: table-cell;
+	text-align: left;
+	padding-left: 5px;
+	white-space: nowrap;
+	width:100px;
+}
+.inline .smallinput .text  {
+	display: table-cell;
+	text-align: left;
+	padding-left: 5px;
+	white-space: nowrap;
+	width: 60px;
+}
+.smallinput { 
+	width:120px; 
+}
+.inline {
+	display: block;
+}
+.inline .text {
+	float: left;
+	width: 180px;
+	display: table-cell;
+	text-align: left;
+	padding-left: 5px;
+	white-space: nowrap;
+}
+
+.desc {
+	float: left;
+	width: 140px; 
+	display: table-cell;
+	white-space: nowrap;
+}
+.check {
+	float: left;
+	width: 55px; 
+	display: table-cell;
+	text-align: right;
+	white-space: nowrap;
+}
+.error {
+	font-weight: bold;
+	color: #ff0000;
+}
+.error INPUT {
+	border: 2px outset #ff0000;
+}
+
+SPAN { 
+	border: 1px black;
+}
+
+.compact  {
+	width:auto;
+}
+.text {
+	white-space: nowrap;
+}
+
+.letterlinks {
+	padding:5px 5px 5px 5px;
+	margin: 10px 10px 10px 10px;
+	font-family: arial,helvetica;
+	font-weight: bold;
+	font-size: 16pt;
+	
+}
+
+.rightnav {
+	background: white;
+	border: 1px solid #CCC
+	
+}
+.pagination {
+	float: left;
+	clear: left;
+	margin-top: 20px;
+}

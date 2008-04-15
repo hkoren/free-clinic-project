@@ -1,0 +1,153 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <TableLayout android:id="@+id/layout"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:gravity="center"
+   android:paddingTop="80dip">
+	<TableRow
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:padding="2dip">
+	</TableRow>
+	   <TableRow
+	   		android:gravity="center"
+	   		android:layout_height="wrap_content"
+	   		android:layout_width="fill_parent"
+	   		android:padding="2dip">
+	       <TextView
+	           android:text="@string/temp"
+	           android:textStyle="bold"
+	           android:textAlign="end"
+	           android:padding="3dip"/>
+	       <EditText android:id="@+id/temp"
+	           android:padding="7dip"
+	       	   style="@style/FCPEditText"
+	           android:scrollHorizontally="true" 
+	           android:layout_height="45dip"/>
+	       <TextView
+	           android:text="@string/degF"
+	           android:textStyle="bold"
+	           android:textAlign="start"
+	           android:padding="3dip"/>
+	   </TableRow>
+	
+	   <TableRow
+	   		android:gravity="center"
+	   		android:layout_height="wrap_content"
+	   		android:layout_width="fill_parent"
+	   		android:padding="2dip">
+	       <TextView
+	           android:text="@string/hr"
+	           android:textStyle="bold"
+	           android:textAlign="end"
+	           android:padding="3dip" />
+	
+	       <EditText android:id="@+id/hr"
+	           android:padding="7dip"
+	           android:scrollHorizontally="true"
+	           style="@style/FCPEditText" 
+	           android:layout_height="45dip"/>
+	       <TextView
+	           android:text="@string/bpm"
+	           android:textStyle="bold"
+	           android:textAlign="start"
+	           android:padding="3dip" />
+	   </TableRow>
+	   <TableRow
+	   		android:gravity="center"
+	   		android:layout_height="wrap_content"
+	   		android:layout_width="fill_parent"
+	   		android:padding="2dip">
+	       <TextView
+	           android:text="@string/syst"
+	           android:textStyle="bold"
+	           android:textAlign="end"
+	           android:padding="3dip" />
+	
+	       <EditText android:id="@+id/syst"
+	           android:padding="7dip"
+	           android:scrollHorizontally="true"
+	           style="@style/FCPEditText" 
+	           android:layout_height="45dip"/>
+	       <TextView
+	           android:text="@string/mmHg"
+	           android:textStyle="bold"
+	           android:textAlign="start"
+	           android:padding="3dip" />
+	   </TableRow>
+	   <TableRow
+	   		android:gravity="center"
+	   		android:layout_height="wrap_content"
+	   		android:layout_width="fill_parent"
+	   		android:padding="2dip">
+	       <TextView
+	           android:text="@string/dias"
+	           android:textStyle="bold"
+	           android:textAlign="end"
+	           android:padding="3dip" />
+	
+	       <EditText android:id="@+id/dias"
+	           android:padding="7dip"
+	           android:scrollHorizontally="true"
+	           style="@style/FCPEditText" 
+	           android:layout_height="45dip"/>
+	       <TextView
+	           android:text="@string/mmHg"
+	           android:textStyle="bold"
+	           android:textAlign="start"
+	           android:padding="3dip" />
+	   </TableRow>
+	   <TableRow
+	   		android:gravity="center"
+	   		android:layout_height="wrap_content"
+	   		android:layout_width="fill_parent"
+	   		android:padding="2dip">
+	       <TextView
+	           android:text="@string/resp"
+	           android:textStyle="bold"
+	           android:textAlign="end"
+	           android:padding="3dip" />
+	
+	       <EditText android:id="@+id/resp"
+	           android:padding="7dip"
+	           android:scrollHorizontally="true"
+	           style="@style/FCPEditText" 
+	           android:layout_height="45dip"/>
+	       <TextView
+	           android:text="@string/bpm"
+	           android:textStyle="bold"
+	           android:textAlign="start"
+	           android:padding="3dip" />
+	   </TableRow>
+	
+	   <TableRow
+	       android:gravity="center"
+	       android:padding="2dip">
+	
+		  <LinearLayout
+		   android:layout_height="wrap_content"
+		   android:layout_width="wrap_content"
+		   android:padding="1dip">
+	       <Button android:id="@+id/cancel"
+	           android:layout_height="wrap_content"
+		       android:layout_width="wrap_content"
+	           android:text="@string/cancel" 
+	           style="@style/FCPButton"/>
+		  </LinearLayout>
+		  <LinearLayout
+		   android:layout_height="wrap_content"
+		   android:layout_width="wrap_content"
+		   android:padding="1dip">
+	       <Button android:id="@+id/save"
+	           android:layout_height="wrap_content"
+		       android:layout_width="wrap_content"
+	           android:text="@string/save" 
+	           style="@style/FCPButton"/>
+	       </LinearLayout>    
+	   </TableRow>
+	</TableLayout>
+</LinearLayout>

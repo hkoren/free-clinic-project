@@ -1,0 +1,72 @@
+<project name="freeClinicServer.project" default="jar" basedir=".">
+    <property name="app.name"       value="FreeClinicServer" />
+    <property name="build.dir"      value="build/classes" />
+    <property name="build.home"     value="build/${app.name}"/>
+    <property name="lib.dir"        value="build/lib"/>
+    <property name="src.dir"        value="src/" />
+    <property name="dist.dir"       value="dist" />
+
+    <property name="common.path"     value="../Common/"/>
+    <property name="common.base"   value="${common.path}src/org/freeclinic/common/"/>
+
+
+    <path id="project.class.path">
+        <pathelement path="../Common/FreeClinicCommon.jar"/>
+    	<fileset dir="../Common/assets">
+    		<include name="**/*.jar"/>
+    	</fileset>
+    	<fileset dir="assets">
+    		<include name="**/*.jar"/>
+    	</fileset>
+    </path>
+
+    <path id="tomcat.path">
+      <pathelement path="${classpath}"/>
+        <fileset dir="/usr/local/tomcat5.5/common/lib/">
+        <include name="**/*.jar"/>
+      </fileset>
+    </path>
+
+    <!-- =================================================================== -->
+    <!-- Compile package                                                     -->
+    <!-- =================================================================== -->
+    <target name="compile">
+        <mkdir dir="${build.dir}"/>
+        <javac srcdir="src/" destdir="${build.dir}" debug="on">
+            <include name="../Common/src/**/*.java"/>
+		<include name="**/*.java"/>
+		    <classpath refid="project.class.path"/>
+	        <include name="../Common/FreeClinicCommon.jar"/>
+        	
+	    </javac>
+    </target>
+
+
+    <!-- =================================================================== -->
+    <!-- Creates the package jar archive                                     -->
+    <!-- =================================================================== -->
+    <target name="jar" depends="compile">
+        <jar jarfile="${app.name}.jar"
+             basedir="${build.dir}">
+            <manifest>
+		    <attribute name="Main-Class" value="org.freeclinic.server.Server"/>
+		    <attribute name="Class-Path" value="assets/FreeClinicCommon.jar assets/fast-md5.jar assets/mysql-connector-java-5.1.5-bin.jar ../Common/assets/android.jar"/>
+            </manifest>
+	    </jar>
+    </target>
+
+
+    <target name="sjar" depends="compile">
+        <jar jarfile="${app.name}.secure.jar"
+             basedir="${build.dir}">
+            <manifest>
+                    <attribute name="Main-Class" value="org.freeclinic.server.SSLServer"/>
+                    <attribute name="Class-Path" value="assets/FreeClinicCommon.jar assets/fast-md5.jar assets/mysql-connector-java-5.1.5-bin.jar ../Common/assets/android.jar"/>
+            </manifest>
+            </jar>
+    </target>
+
+
+
+
+</project>

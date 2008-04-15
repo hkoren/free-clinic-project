@@ -1,0 +1,9 @@
+package org.freeclinic.android.service;
+
+//import org.freeclinic.android.service.FCPService;
+//import org.freeclinic.common.network.Login;
+
+interface IFCPService {
+	boolean login(String username, String password);
+	
+}

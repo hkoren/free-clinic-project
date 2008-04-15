@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Demonstrates starting and stopping a local service.
+     See corresponding Java code com.google.android.sdk.app.LocalSerice.java. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent" 
+style="@style/FCPBackground">
+	<LinearLayout  android:orientation="vertical" android:padding="0dip"
+	    android:gravity="center_horizontal"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content">
+	    
+	    <!--  Top View -->
+		<LinearLayout android:orientation="horizontal" 
+		android:padding="0dip"
+	    android:gravity="center_vertical"  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"  
+	    android:id="@+id/topbar"
+	    android:layout_alignParentTop="true">
+	        <LinearLayout android:orientation="vertical" android:padding="0dip"
+	    android:gravity="center_horizontal"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content">
+			    <TextView
+		           android:id="@+id/name"
+		           android:textStyle="bold"
+		           android:textAlign="center"
+		           android:padding="0dip" 
+		           android:textSize="25.0sp"
+		           android:layout_width="fill_parent" 
+		           android:layout_height="wrap_content"/>
+				<TextView
+		           android:id="@+id/subtitle"
+		           android:textStyle="bold"
+		           android:textAlign="center"
+		           android:padding="0dip"
+		           android:textSize="14.0sp"
+		           android:layout_width="fill_parent" 
+		           android:layout_height="wrap_content" />
+		           <TextView
+		           android:id="@+id/complaint"
+		           android:textStyle="bold"
+		           android:textAlign="center"
+		           android:padding="0dip"
+		           android:textSize="14.0sp"
+		           android:layout_width="fill_parent" 
+		           android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+		<!-- Top Nav Bar -->
+		<LinearLayout
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:padding="4px">
+		<Button android:id="@+id/vitals_button" 
+		android:layout_width="fill_parent" 
+		android:layout_height="50dip" 
+		android:background="@drawable/fcp_button_large"/>
+		</LinearLayout>
+		
+		<TableLayout android:orientation="horizontal" android:padding="0dip" android:id="@+id/topnav"
+	           	android:gravity="center_vertical"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*">
+			<TableRow android:layout_height="fill_parent" 
+		   android:padding="4dip">
+		   		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip">
+		   		<Button android:id="@+id/history_button" android:text="@string/history"  android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/fcp_button_large"/>
+		        </LinearLayout>
+		        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip">
+		        <Button android:id="@+id/allergies_button" android:text="@string/allergies" android:layout_width="fill_parent"  android:layout_height="fill_parent" android:background="@drawable/fcp_button_large"/>
+				</LinearLayout>
+		   </TableRow>
+		   <TableRow android:layout_height="fill_parent" 
+		   android:padding="4dip">
+		   		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip">
+		   		<Button android:id="@+id/visualize_button" android:text="@string/visualize"  android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/fcp_button_large"/>
+		        </LinearLayout>
+		        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip">
+		        <Button android:id="@+id/details" android:text="@string/details" android:layout_width="fill_parent"  android:layout_height="fill_parent" android:background="@drawable/fcp_button_large"/>
+				</LinearLayout>	   
+		   </TableRow>
+			<TableRow android:layout_height="fill_parent" 
+		   android:padding="4dip">
+		   		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip">
+		   		<Button android:id="@+id/prescribe" android:text="@string/prescribe"  android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/fcp_button_large"/>
+		        </LinearLayout>
+		        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip">
+		        <Button android:id="@+id/diagnose" android:text="@string/diagnose" android:layout_width="fill_parent"  android:layout_height="fill_parent" android:background="@drawable/fcp_button_large"/>
+				</LinearLayout>	   
+		   </TableRow>
+		   <TableRow android:layout_height="fill_parent"
+		   android:padding="4dip">
+		   		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip">
+		   		<Button android:id="@+id/note" android:text="@string/note"  android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/fcp_button_large"/>
+		        </LinearLayout>
+		        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip">
+		        <Button android:id="@+id/treat" android:text="@string/treat"  android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/fcp_button_large"/>
+				</LinearLayout>		  
+		   </TableRow>
+		   <TableRow android:layout_height="fill_parent"
+		   android:padding="4dip">
+		   		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip">
+		   		<Button android:id="@+id/refer" android:text="@string/refer"  android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/fcp_button_large"/>
+		        </LinearLayout>
+		        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="2dip">
+		        <Button android:id="@+id/exit" android:text="@string/exit"  android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/fcp_button_large"/>
+		   		</LinearLayout>
+		   </TableRow>
+	    </TableLayout>
+	</LinearLayout>
+	
+	<!--  Bottom View -->
+	
+	<!-- TableLayout android:orientation="horizontal" android:padding="4dip"
+           	android:gravity="center_vertical"  android:layout_width="fill_parent" android:layout_height="wrap_content"  android:id="@+id/bottombar"
+           	android:layout_alignParentBottom="true"  android:stretchColumns="*">
+	    <TableRow
+	    >
+	       <LinearLayout
+			   android:layout_width="fill_parent"
+			   android:layout_height="wrap_content"
+			   android:padding="2px">
+	 		<Button android:id="@+id/visualize_button"
+	      	   android:text="@string/visualize" 
+	      	   android:layout_width="fill_parent" 
+	      	   android:layout_height="50dip" 
+	      	   android:background="@drawable/fcp_button"
+	      	   />
+	      	   </LinearLayout>
+	      	   <LinearLayout
+			   android:layout_width="fill_parent"
+			   android:layout_height="wrap_content"
+			   android:padding="2px">
+	      	<Button android:id="@+id/details"
+	      	   android:text="@string/details" 
+	      	   android:layout_width="fill_parent" 
+	      	   android:layout_height="50dip" 
+	      	   android:background="@drawable/fcp_button"
+	      	   />
+	      	   </LinearLayout>
+	      	   <LinearLayout
+			   android:layout_width="fill_parent"
+			   android:layout_height="wrap_content"
+			   android:padding="2px">
+	      	<Button android:id="@+id/exit"
+	      	   android:text="@string/exit" 
+	      	   android:layout_width="fill_parent" 
+	      	   android:layout_height="50dip" 
+	      	   android:background="@drawable/fcp_button"
+	      	   />
+	      	   </LinearLayout>
+		</TableRow>
+	</TableLayout-->
+
+    <!--  Center View -->
+ 	
+	<!-- View android:id="@+id/center" android:layout_width="fill_parent" android:layout_height="0dip" 
+		android:layout_below="@id/topbar" android:layout_above="@id/bottombar"/--> 
+
+</RelativeLayout> 

@@ -1,0 +1,55 @@
+<!-- 
+*	Making layout for registration page. The great question; should they have 
+*	a quit button.
+*
+ -->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:stretchColumns="0"
+   style="@style/FCPBackground">
+
+       <TextView
+       	   android:id="@+id/device_reg"
+           android:text="@string/device_reg"
+           android:textStyle="bold"
+           android:textAlign="center"
+		   android:layout_width="fill_parent"
+   		   android:layout_height="wrap_content"
+           android:padding="3dip" />
+
+
+       <TextView
+       	   android:id="@+id/status"
+           android:text="@string/register"
+           android:textStyle="bold"
+           android:textAlign="center"
+           android:layout_width="fill_parent"
+   		   android:layout_height="wrap_content"
+           android:padding="3dip" />
+
+		<TextView
+	   		android:id = "@+id/registered"
+	   		android:text="@string/registered"
+	   		android:textStyle = "bold"
+	   		android:textAlign ="center"
+	   		android:layout_width="fill_parent"
+   		    android:layout_height="wrap_content"
+	   		android:padding="3dip" />	 
+	   		
+	   
+   		<Button android:id="@+id/register"
+   				android:text="@string/register"
+   			 	android:layout_width="fill_parent"
+   		    	android:layout_height="wrap_content" />
+
+       <Button android:id="@+id/close"
+           android:text="@string/close" 
+           android:layout_width="fill_parent"
+   		   android:layout_height="wrap_content"/>
+
+ 
+</LinearLayout>

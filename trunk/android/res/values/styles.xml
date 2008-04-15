@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>    
+    <!-- Base application theme is the default theme. -->
+    <style name="Theme" parent="android:Theme">
+    </style>
+
+	<style name="Theme.Translucent">
+        <item name="android:windowBackground">@drawable/translucent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+    </style>
+    <style name="Sort">
+        <item name="android:colorForeground">#8f8</item>
+	   	<item name="android:colorBackground">#cff</item>
+	   	<item name="android:color">#acc</item>
+    </style>
+    <style name="FCPButton">
+        <item name="android:colorForeground">#8f8</item>
+	   	<item name="android:colorBackground">#cff</item>
+	   	<item name="android:color">#acc</item>
+	   	<item name="android:background">@drawable/fcp_button</item>
+    </style>
+    <style name="Message">
+        <item name="android:colorForeground">#88f</item>
+	   	<item name="android:colorBackground">#fcf</item>
+	   	<item name="android:color">#cac</item>
+    </style>
+    <style name="FCPEditText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:background">@drawable/fcp_edit</item>
+    </style>
+    <style name="FCPListHeader">
+    	<item name="android:background">@drawable/list_header</item>
+    	<item name="android:color">@color/black</item>
+    </style>
+    <style name="FCPBackground">
+        <item name="android:background">@drawable/fcpback</item>
+    </style>
+</resources>
