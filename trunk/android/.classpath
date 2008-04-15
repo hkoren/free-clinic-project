@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry excluding="ServiceInterface.aidl" kind="src" path="src"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/Common"/>
-	<classpathentry kind="con" path="com.android.ide.eclipse.adt.project.AndroidClasspathContainerInitializer"/>
-	<classpathentry kind="output" path="bin"/>
-</classpath>
