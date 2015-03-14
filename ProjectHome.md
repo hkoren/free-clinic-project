@@ -1,0 +1,3 @@
+The focus of our project is to provide a free, secure, and portable platform for storing patient information and managing their diseases in order to to provide patients with the best care possible.
+
+Our client is the UCSD Student-Run Free Clinic Project which serves underserved people in the city of San Diego. We are designing our software to fit their needs, and ultimately, the needs of Free Clinics around the nation and the world.
